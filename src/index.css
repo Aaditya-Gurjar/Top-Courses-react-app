@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #22223b);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+body{
+    background-color: rgb(62, 66, 95);
+}
+
+.main-heading{
+    width: 100%;
+    background-color: #12203a;
+    /* padding: 10px auto; */
+    height: 50px;
+    
+    
+}
+
+.main-heading h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
+}
+
+.btn-container button{
+    margin-right: 20px ;
+    background-color: rgb(2, 47, 75);
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.spinner-container{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.spinner-container p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cards-container{
+    max-width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.single-card-container{
+    position: relative;
+    max-width: 30%;
+    margin: 10px;
+    background-color: #12203a;
+    color: white;
+    border-radius: 5px
+}
+
+.like-btn{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+.single-card-description{
+    padding: 5px 10px;
+    
+
+}
+
+.single-card-description .course-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+.single-card-description .course-description{
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
